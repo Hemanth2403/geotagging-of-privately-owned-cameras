@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Story India | IT & Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Create Your Story India</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#orders">Orders</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#careers">Careers</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn">Login</a>
+        <a href="signup.html" class="btn">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <video autoplay muted loop id="bgVideo">
+      <source src="product-showcase.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <h1>Empowering Your Digital Future</h1>
+      <p>Explore our cutting-edge IT and Digital Solutions for a modern world</p>
+      <a href="#services" class="btn-primary">Discover More</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-blocks">
+      <div class="service">
+        <img src="software-dev-png.png" alt="Software Development">
+        <h3>Software Development</h3>
+        <p>We build customized software solutions tailored to your business needs.</p>
+      </div>
+      <div class="service">
+        <img src="digital-marketing-png.png" alt="Digital Marketing">
+        <h3>Digital Marketing</h3>
+        <p>Boost your online presence with innovative digital marketing strategies.</p>
+      </div>
+      <div class="service">
+        <img src="cloud-solutions-png.png" alt="Cloud Solutions">
+        <h3>Cloud Solutions</h3>
+        <p>Leverage our secure and scalable cloud services for seamless operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orders Section with Interactive Form -->
+  <section id="orders" class="orders">
+    <h2>Get Started with Us</h2>
+    <p>Submit your requirements and let us help you create the future.</p>
+    <form action="submit_order.php" method="POST" class="order-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="requirements" placeholder="Describe Your Requirements" required></textarea>
+      <button type="submit" class="btn-primary">Submit Order</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="address">
+        <h3>Our Address</h3>
+        <p>123 Jassu House Bagar Beri, Fort Road, Jodhpur, Rajasthan, 342001, India</p>
+        <p>Contact: +91 99299 95008</p>
+        <p>Email: <a href="mailto:navneet@createyourstoryindia.com">navneet@createyourstoryindia.com</a></p>
+      </div>
+      <div id="map"></div> <!-- Google Maps API will load here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Create Your Story India. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
